@@ -11,16 +11,16 @@ $(document).ready(function(e){
     });
 
     $toggle.click(function(e){
-        $navbar.toggleClass("toggle-left");
+        $navbar.toggleClass("toggle-menu");
     })
 
 });
 
 function toggle_onclick($win, $navbar, width){
     if($win.width() <= 768){
-        $navbar.css({left: `-${width}px`});
+        $navbar.css({right: `-${width}px`});
     }else{
-        $navbar.css({left: '0px'});
+        $navbar.css({right: '0=px'});
     }
 }
 
